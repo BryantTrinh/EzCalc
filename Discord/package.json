@@ -1,10 +1,13 @@
 {
-  "name": "discord",
+  "name": "EzCalc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Server/Config/start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Server/Config/start.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,7 @@
     "axios": "^1.6.7",
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.1",
-    "math": "^0.0.3",
+    "mathjs": "^12.3.0",
     "nodemon": "^3.0.3"
   }
 }
