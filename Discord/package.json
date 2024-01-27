@@ -7,7 +7,8 @@
     "start": "node Server/Config/start.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "register": "node -r dotenv/config ./Server/Config/Commands/addCommand.js"
   },
   "keywords": [],
   "author": "",
